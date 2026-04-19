@@ -9,7 +9,6 @@ Changes included in inital commit:
 - Removed swig wrapper script, used built-in CMake Swig wrapper.
 - Fixed include directives to point to correct Effekseer headers
 - stripped Swig build to only build for java, as this is only for Minecraft builds.
-- 
 
 To Build:
 ```bash
