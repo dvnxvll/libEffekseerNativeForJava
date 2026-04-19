@@ -16,7 +16,7 @@ int char16_len(const char16_t* s)
 %typemap(jstype)	char16_t* "String"
 
 
-%typemap(in) char16_t* { 
+%typemap(in) char16_t* {
   $1 = 0;
   if ($input) {
     $1 = ($1_ltype)JCALL2(GetStringChars, jenv, $input, 0);
@@ -24,7 +24,7 @@ int char16_len(const char16_t* s)
   }
 }
 
-%typemap(directorin, descriptor="Ljava/lang/String;") char16_t* { 
+%typemap(directorin, descriptor="Ljava/lang/String;") char16_t* {
   $input = 0;
   if ($1) {
     $input = JCALL1(NewString, jenv, $1);

@@ -20,4 +20,3 @@
 %include "EffekseerBackendCore.h"
 %include "EffekseerEffectCore.h"
 %include "EffekseerManagerCore.h"
-
